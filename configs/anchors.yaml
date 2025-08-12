@@ -1,0 +1,45 @@
+---
+# Baseline translator configuration for geometry baseline pipeline.
+# Each entry in the list defines an anchor (gauge, L, b, kappa) and f-grid.
+anchors:
+  - gauge: SU3
+    L: 256
+    b: 3.5
+    kappa: 1.0
+  - gauge: SU3
+    L: 256
+    b: 3.5
+    kappa: 0.75
+  - gauge: SU2
+    L: 256
+    b: 3.5
+    kappa: 1.0
+
+# Measurement fractions (f values).  These map to FPHS snapshot subfolders.
+f_values: [0.0, 0.10, 0.30]
+
+# Seeds to reuse (matching MICC runs) – they index different random realisations of the FPHS fields.
+seeds: [0, 1, 2, 3, 4]
+
+# Smoothing length (Gaussian width) in lattice units.
+ell: 4
+
+# Poisson parameters: epsilon = 0.5*ell; pad_factor multiplies the grid size for zero padding.
+poisson:
+  pad_factor: 4
+  epsilon_factor: 0.5
+
+# Optics parameters: lambda list for refractive index; impact parameter grid details.
+optics:
+  lambda_list: [0.2, 0.5, 1.0]
+  impact_b_start: 8
+  impact_b_end: 96
+  impact_points: 32
+  impact_window_fraction: 0.6  # central 60% for fitting
+
+# Radial binning: number of logarithmic rings and ring exclusion thresholds.
+radial:
+  num_bins: 36
+  min_pixels: 50
+  r_min_factor: 3.0  # r_min = r_min_factor * ell
+  r_max_fraction: 0.3  # r_max = r_max_fraction * L

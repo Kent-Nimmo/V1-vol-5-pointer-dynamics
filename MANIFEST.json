@@ -1,0 +1,4 @@
+{
+  "config_hash": "724025b2cff23801ece5cfe3a9e999963cdb808de0afd3f88040a0fe2236eac4",
+  "notes": "This manifest records the SHA-256 of the anchors configuration file.  Real E0 data are not yet included; the pipeline was tested with synthetic placeholders (see README)."
+}

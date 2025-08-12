@@ -1,0 +1,15 @@
+"""
+CITATION.cff for geometry-baseline-fphs
+---------------------------------------
+
+To cite this software, please use the following BibTeX entry:
+
+@software{geometry_baseline_fphs,
+  author       = {The Absolute Relativity Collaboration},
+  title        = {Geometry Baseline for FPHS},
+  version      = {0.1.0},
+  date         = {2025-08-12},
+  url          = {https://github.com/Kent-Nimmo/geometry-baseline-fphs},
+  note         = {Translator baseline pipeline for FPHS geometry sector}
+}
+"""
