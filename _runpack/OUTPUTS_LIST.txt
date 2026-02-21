@@ -1,0 +1,15 @@
+# vol-5-pointer-dynamics output files
+
+## Per-condition results (runs/)
+runs/runs/ (45 summary JSON files)
+  - Pattern: summary_{gauge}_L{L}_b{b}_k{kappa}_f{f}_seed{seed}.json
+runs/radial/ (135 CSV files: radial_phi, radial_grad, radial_grad_norm per condition)
+runs/lensing/ (45 CSV files: lensing per condition)
+runs/plots/ (90 PNG files: radial + lensing plots per condition)
+
+## Aggregated
+results/summary.csv (45 rows)
+runs/summary.csv
+
+## Report
+reports/REPORT.md

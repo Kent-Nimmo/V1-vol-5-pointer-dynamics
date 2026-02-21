@@ -1,0 +1,15 @@
+# Run Notes: vol-5-pointer-dynamics
+
+## Environment
+- Python 3.12.3 (Anaconda)
+- numpy 1.26.4, scipy 1.13.1, pandas 2.2.2, pyyaml 6.0.1, matplotlib 3.9.2
+- Windows 11 Home
+
+## Run Steps
+1. cd C:\Users\kentn\vol-5-pointer-dynamics
+2. python -m src.geometry.run_geometry --config configs/anchors.yaml --data-dir data/inputs --out-dir runs
+3. python scripts/aggregate.py --runs-dir runs --out-dir results
+4. python scripts/generate_report.py --summary results/summary.csv --out-report reports/REPORT.md
+
+## Issues Encountered
+- None. All 45 conditions ran cleanly.

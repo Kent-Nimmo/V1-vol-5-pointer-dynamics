@@ -1,0 +1,19 @@
+{
+  "repo": "vol-5-pointer-dynamics",
+  "ran_successfully": true,
+  "conditions_completed": 45,
+  "conditions_total": 45,
+  "config_used": "configs/anchors.yaml",
+  "gauges": ["SU2", "SU3"],
+  "lattice_size": 256,
+  "ell": 4,
+  "f_values": [0.0, 0.1, 0.3],
+  "seeds": [0, 1, 2, 3, 4],
+  "s_phi_mean": -0.1932,
+  "r2_phi_mean": 0.1940,
+  "s_grad_mean": -0.6427,
+  "r2_grad_mean": 0.3508,
+  "alpha_slope_lambda0.2_mean": 137.68,
+  "alpha_r2_lambda0.2_mean": 0.160,
+  "acceptance_test": "N/A (baseline reference)"
+}
